@@ -1,0 +1,22 @@
+PCB Simplifier Web App：第三方套件說明
+此工具由虎門科技資深技術工程師 Jeff Hong 洪敬傑提供
+
+本工具使用下列開放原始碼套件。實際授權內容與完整相依清單，
+以發布版本安裝的套件中所附授權檔案及各套件官方專案為準。
+
+Python：
+- FastAPI
+- Uvicorn
+- WebSockets
+- Pydantic
+- PyEDB
+
+JavaScript／TypeScript：
+- React
+- React DOM
+- Vite
+- Allotment
+- TypeScript
+
+Ansys Electronics Desktop、EDB、SIwave 與相關名稱及商標屬其權利人所有。
+本發布包不包含 Ansys 商業軟體、商業 DLL、安裝檔或授權。

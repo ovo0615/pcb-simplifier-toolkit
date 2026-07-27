@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+**/.venv/
+venv/
+build/
+dist/
+*.tsbuildinfo
+
+# 一般 dist 仍忽略；但 GitHub Source ZIP 必須包含已建置的 Web 前端。
+!web_app/frontend/dist/
+!web_app/frontend/dist/**
+
+# Node
+node_modules/
+
+# EDB 專案與大型測試資料
+*.aedb/
+*.tgz
+
+# 其他
+*.log
+.DS_Store
