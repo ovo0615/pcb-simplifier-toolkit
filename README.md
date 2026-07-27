@@ -9,6 +9,10 @@
 - Web 操作畫面與操作說明。
 - 前端套件設定與第三方授權資訊。
 
+## 操作說明
+
+請參閱：[PCB Simplifier 操作說明](docs/操作說明.md)。
+
 ## 未公開內容
 
 完整 Python 腳本、FastAPI／PyEDB 後端、桌面版工具、啟動腳本、AEDB／SIwave 專案與模擬資料已移至私人 Repository，不在此公開。
