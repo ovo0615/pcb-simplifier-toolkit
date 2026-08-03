@@ -217,7 +217,7 @@ export default function App() {
                       className="input"
                       value={inputPath} 
                       onChange={e => setInputPath(e.target.value)} 
-                      placeholder="D:\path\to\file.aedb" 
+                      placeholder="path\to\file.aedb"
                     />
                     <button className="btn" onClick={handleBrowseInput}>瀏覽...</button>
                   </div>
