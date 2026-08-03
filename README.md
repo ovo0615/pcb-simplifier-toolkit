@@ -28,3 +28,7 @@
 如有完整工具、客製化功能或商業使用需求，請透過 GitHub 個人頁面或電子郵件聯絡洽詢。
 
 此工具由虎門科技資深技術工程師 Jeff Hong 洪敬傑提供
+
+---
+
+本 Repository 為 Jeff Hong 個人技術作品集之公開展示內容，非 Taiwan Auto-Design Co.（TADC，虎門科技）官方帳號，亦非 Ansys, Inc. 官方合作項目；Ansys、HFSS、SIwave 為 Ansys, Inc. 之商標。原始碼與內容僅供技術展示，未經授權不得商業使用、散布或製作衍生作品，詳見 [LICENSE](LICENSE)。如需授權或合作，請洽 jeff.hong@cadmen.com。
