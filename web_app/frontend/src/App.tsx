@@ -191,7 +191,7 @@ export default function App() {
         <div>
           <h1 className="app-title">PCB Simplifier Toolkit</h1>
           <p className="app-sub">
-            2D Layout 預覽 + 網路清單萃取與 EDB 幾何簡化。此工具由虎門科技資深技術工程師 Jeff Hong 洪敬傑提供。
+            2D Layout 預覽 + 網路清單萃取與 EDB 幾何簡化。
           </p>
         </div>
         <img 
