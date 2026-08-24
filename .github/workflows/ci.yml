@@ -49,6 +49,28 @@ jobs:
           fi
           echo "OK: no .env/credential files tracked."
 
+  no-backend-source:
+    name: Forbid backend source on the public repo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject tracked backend code
+        run: |
+          set -e
+          # The public repo ships the Web front end, the built dist, and the docs.
+          # The backend is the product; it stays in the private repo. Nothing here
+          # stopped it from being pushed, so this job is the guard.
+          matches=$(git ls-files | grep -E '^web_app/backend/|(^|/)app/.*\.py$|\.pyc$|\.pyd$' || true)
+          if [ -n "$matches" ]; then
+            echo "Backend source must not be published. Offending paths:"
+            echo "$matches"
+            echo ""
+            echo "If a file here is genuinely public-safe, add an explicit exception"
+            echo "to this pattern rather than deleting the job."
+            exit 1
+          fi
+          echo "OK: no backend source tracked on this branch."
+
   python-compile-check:
     name: Python compile check (skips if no .py files are tracked)
     runs-on: ubuntu-latest
